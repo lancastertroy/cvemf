@@ -222,8 +222,13 @@
 </header>
 
 <!-- ============ INTRO ============ -->
-<section style="background:#f2f1ef; padding:64px clamp(24px,5vw,64px)">
-  <div style="max-width:760px; margin:0 auto">
+<section style="background:#f2f1ef; padding:64px 0">
+  <!-- Misma retícula que el hero y Programa Geral (1280 px + el mismo padding lateral), para que
+       el borde izquierdo del texto coincida con el del resto del sitio. Dentro, la columna se
+       limita a 760 px alineada a la izquierda: mantiene la línea corta y legible sin centrarse,
+       que era lo que rompía la alineación en pantallas anchas. -->
+  <div style="max-width:1280px; margin:0 auto; padding:0 clamp(24px,5vw,64px); box-sizing:border-box">
+   <div style="max-width:760px">
     <h2 class="h2xc" style="margin:0 0 24px; line-height:1.3; font-size:clamp(24px,3.6vw,36px)">
       <span data-l="pt">4.ª Edição do "Costa Vicentina Early Music Fest" regressa a Vila do Bispo, Sagres e Aljezur, com extensão no Museu de Lagos!</span>
       <span data-l="en">4th Edition of the "Costa Vicentina Early Music Fest" Returns to Vila do Bispo, Sagres and Aljezur, with a New Extension at the Lagos Museum!</span>
@@ -232,6 +237,7 @@
       <span data-l="pt">De 22 a 29 de agosto de 2026, a Costa Vicentina recebe a 4ª edição do "Costa Vicentina Early Music Fest", organizado pel'O Corvo e a Raposa — Associação Cultural, estrutura apoiada pelo Município de Vila do Bispo. COSTA VICENTINA Early Music Fest é um projeto de divulgação da música historicamente informada no Barlavento Algarvio, numa perspetiva dialética entre a música antiga como potenciadora de diálogo intercultural e intertemporal entre a Ibéria e o Mundo, e entre o passado e o presente.</span>
       <span data-l="en">From 22 to 29 August 2026, the Costa Vicentina will host the 4th edition of the Costa Vicentina Early Music Fest, organised by O Corvo e a Raposa — Associação Cultural, supported by the Municipality of Vila do Bispo. The COSTA VICENTINA Early Music Fest is a project dedicated to promoting historically informed music in the western Algarve (Barlavento Algarvio), exploring early music as a bridge for intercultural and intertemporal dialogue, between Iberia and the world, and between the past and the present.</span>
     </p>
+   </div>
   </div>
 </section>
 
