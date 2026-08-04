@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="pt" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+
+<title>Costa Vicentina Early Music Fest'26 · 22—29 agosto 2026</title>
+<meta name="description" content="4.ª edição do Costa Vicentina Early Music Fest. Vila do Bispo, Sagres, Aljezur e Lagos, 22 a 29 de agosto de 2026. Entrada livre.">
+<link rel="canonical" href="https://costavicentinaemf.pt/">
+
+<!-- Open Graph: la vista previa cuando o link é partilhado no Facebook, Instagram ou WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Costa Vicentina Early Music Fest">
+<meta property="og:title" content="Costa Vicentina Early Music Fest'26">
+<meta property="og:description" content="4.ª edição. Vila do Bispo, Sagres, Aljezur e Lagos · 22—29 agosto 2026 · Entrada livre.">
+<meta property="og:url" content="https://lancastertroy.github.io/cvemf/">
+<meta property="og:image" content="https://lancastertroy.github.io/cvemf/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fortaleza de Sagres vista de cima, ao pôr do sol">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Costa Vicentina Early Music Fest'26">
+<meta name="twitter:description" content="4.ª edição. Vila do Bispo, Sagres, Aljezur e Lagos · 22—29 agosto 2026 · Entrada livre.">
+<meta name="twitter:image" content="https://lancastertroy.github.io/cvemf/img/og-image.jpg">
+
+<meta name="theme-color" content="#1c1d1f">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700&family=Saira+Condensed:wght@500;600;700&family=Saira:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#f2f1ef;color:#1c1d1f;font-family:'Saira',sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#1c1d1f;text-decoration:underline;text-underline-offset:2px}
+  a:hover{color:#a4551a}
+  img{display:block}
+
+  /* Alternancia de idioma. data-lang vive en <html>, así que la versión PT
+     se muestra aunque el JavaScript no cargue. */
+  html[data-lang="pt"] [data-l="en"]{display:none !important}
+  html[data-lang="en"] [data-l="pt"]{display:none !important}
+
+  .langswitch{display:flex;border:1px solid rgba(255,255,255,0.85)}
+  .langbtn{font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.06em;
+           padding:8px 14px;border:none;cursor:pointer;text-transform:uppercase;line-height:1;
+           background:transparent;color:#fff}
+  .langbtn[aria-pressed="true"]{background:rgba(255,255,255,0.92);color:#1c1d1f}
+
+  .flink{color:rgba(255,255,255,0.9)}
+  .flink:hover{color:#e88b3d}
+  .soc{color:#e8e8e6;text-decoration:none;display:inline-flex}
+  .soc:hover{color:#e88b3d}
+
+  .grain{position:absolute;inset:0;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    mix-blend-mode:overlay}
+
+  .venueimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .venuelabel{position:absolute;left:24px;right:24px;bottom:24px;font-family:'Saira Condensed',sans-serif;
+    font-weight:700;font-size:18px;letter-spacing:0.06em;text-transform:uppercase;color:#fff;
+    line-height:1.3;text-shadow:0 1px 10px rgba(0,0,0,0.45)}
+  .daycol{flex:1 1 360px;min-height:280px;position:relative;overflow:hidden;background:#5c5e62}
+  .daytext{flex:1.2 1 420px;min-width:0;display:flex;gap:32px}
+  .daynum{font-family:'Saira Extra Condensed',sans-serif;font-weight:700;letter-spacing:0.02em;
+    font-size:clamp(48px,6.5vw,80px);line-height:0.87;color:#a4551a}
+  .daydate{font-family:'Saira Extra Condensed',sans-serif;font-weight:700;letter-spacing:0.02em;
+    font-size:26px;text-transform:uppercase;color:#1c1d1f;line-height:1.3}
+  .dayvenue{font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.06em;
+    text-transform:uppercase;color:#55575c;line-height:1.3;margin-top:8px}
+  .slot{margin-top:32px;border-top:1px solid #dddcd8;padding-top:16px}
+  .slot + .slot{margin-top:64px}
+  .slotrow{display:flex;gap:24px;align-items:baseline}
+  .time{flex:none;font-family:'Saira Extra Condensed',sans-serif;font-weight:700;letter-spacing:0.02em;
+    font-size:22px;color:#a4551a;line-height:1.3}
+  .ens{font-weight:600;font-size:18px;text-transform:uppercase;line-height:1.3}
+  .work{font-weight:600;font-size:17px;line-height:1.3;margin-top:8px}
+  .players{margin:16px 0 0;padding:0;list-style:none;font-weight:400;font-size:15px;line-height:1.55;color:#44464b}
+  .h2xc{font-family:'Saira Extra Condensed',sans-serif;font-weight:700;letter-spacing:0.02em;
+    text-transform:uppercase;line-height:0.87;color:#1c1d1f}
+  .kicker{font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.06em;
+    text-transform:uppercase;color:#55575c;line-height:1.3}
+
+  /* ---- Carrusel de vídeo ----
+     Scroll horizontal nativo (dedo en móvil, flechas en escritorio). Las tarjetas son
+     miniaturas: el reproductor de Vimeo se carga sólo al pulsar play. */
+  .vcar{display:flex;align-items:flex-start;gap:24px;overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x proximity;padding:40px clamp(24px,5vw,64px);
+    scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+  .vcar::-webkit-scrollbar{display:none}
+  .vcard{flex:0 0 78vw;max-width:380px;scroll-snap-align:center}
+  @media(min-width:820px){.vcard{flex:0 0 340px;scroll-snap-align:start}}
+
+  .vthumb{position:relative;display:block;width:100%;aspect-ratio:16/9;overflow:hidden;
+    background:#000;text-decoration:none;border:0;padding:0;cursor:pointer}
+  .vthumb img{width:100%;height:100%;object-fit:cover;
+    transition:transform .5s ease,opacity .3s ease}
+  .vthumb:hover img,.vthumb:focus-visible img{transform:scale(1.05);opacity:.8}
+  .vthumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .vplay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    color:#fff;pointer-events:none;filter:drop-shadow(0 2px 12px rgba(0,0,0,0.5))}
+  .vthumb:hover .vplay{color:#e88b3d}
+  .vkicker{margin-top:16px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;
+    letter-spacing:0.06em;text-transform:uppercase;color:#a4551a;line-height:1.3}
+  /* Dos líneas reservadas en todas las tarjetas: así ninguna estira la fila y el respiro
+     de arriba y el de abajo quedan iguales, tenga el artista un nombre corto o largo. */
+  .vtitle{margin-top:8px;font-family:'Saira Extra Condensed',sans-serif;font-weight:700;
+    letter-spacing:0.02em;font-size:24px;text-transform:uppercase;color:#f2f1ef;line-height:1.15;
+    min-height:2.3em;text-wrap:balance}
+
+  /* ---- Edições anteriores (desplegables) ----
+     El icono es un + hecho con dos barras; al abrir, la vertical se encoge y queda un −. */
+  .ed{border-top:1px solid #dddcd8}
+  .ed:last-of-type{border-bottom:1px solid #dddcd8}
+  .ed-s{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0;
+    cursor:pointer;list-style:none;font-family:'Saira Extra Condensed',sans-serif;font-weight:700;
+    letter-spacing:0.02em;text-transform:uppercase;font-size:clamp(22px,3.2vw,30px);
+    line-height:1.15;color:#1c1d1f;transition:color .2s}
+  .ed-s::-webkit-details-marker{display:none}
+  .ed-s:hover,.ed-s:focus-visible{color:#a4551a}
+  .ed-i{position:relative;flex:none;width:22px;height:22px}
+  .ed-i::before,.ed-i::after{content:"";position:absolute;left:50%;top:50%;background:currentColor}
+  .ed-i::before{width:22px;height:2px;transform:translate(-50%,-50%)}
+  .ed-i::after{width:2px;height:22px;transform:translate(-50%,-50%);transition:transform .25s ease}
+  .ed[open] .ed-i::after{transform:translate(-50%,-50%) scaleY(0)}
+  .ed-b{padding:0 0 32px;max-width:760px}
+  .ed-b p{margin:0 0 24px;font-weight:400;font-size:17px;line-height:1.55;color:#33353a;
+    text-wrap:pretty}
+  .ed-dl{display:inline-flex;align-items:center;gap:12px;padding:14px 28px;
+    font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.06em;
+    text-transform:uppercase;text-decoration:none;color:#1c1d1f;border:1px solid #1c1d1f;
+    transition:background .25s,color .25s}
+  .ed-dl:hover,.ed-dl:focus-visible{background:#1c1d1f;color:#f2f1ef}
+
+  .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+  /* Flechas sobre el carrusel. En táctil se arrastra con el dedo, así que sobran. */
+  .vwrap{position:relative}
+  .vbtn{position:absolute;top:calc(50% - 40px);transform:translateY(-50%);z-index:2;
+    width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;
+    background:rgba(20,21,23,0.72);color:#f2f1ef;border:1px solid rgba(255,255,255,0.3);line-height:1;
+    backdrop-filter:blur(4px)}
+  .vbtn:hover{background:#f2f1ef;color:#1c1d1f;border-color:#f2f1ef}
+  .vprev{left:clamp(8px,2vw,24px)}
+  .vnext{right:clamp(8px,2vw,24px)}
+  @media(hover:none){.vbtn{display:none}}
+
+  /* ---- Reproductor a pantalla grande ---- */
+  .vmodal{width:100%;max-width:100%;height:100%;max-height:100%;margin:0;padding:0;border:0;
+    background:transparent;color:#f2f1ef;overflow:hidden}
+  .vmodal::backdrop{background:rgba(12,12,14,0.95)}
+  .vmodal-in{width:100%;height:100%;box-sizing:border-box;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:16px;padding:16px}
+  /* El ancho lo limita la altura disponible: el vídeo nunca se sale de la pantalla,
+     ni en un móvil apaisado ni en un escritorio muy ancho. */
+  .vframe{position:relative;width:min(100%, 1280px, calc((100vh - 140px) * 16 / 9));
+    aspect-ratio:16/9;background:#000}
+  .vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .vmodal-t{margin:0;max-width:min(100%,1280px);font-family:'Saira Extra Condensed',sans-serif;
+    font-weight:700;letter-spacing:0.02em;font-size:clamp(20px,4vw,28px);text-transform:uppercase;
+    line-height:1.15;text-align:center;color:#f2f1ef}
+  .vclose{position:fixed;top:12px;right:12px;width:48px;height:48px;display:flex;align-items:center;
+    justify-content:center;cursor:pointer;background:rgba(20,21,23,0.72);color:#f2f1ef;
+    border:1px solid rgba(255,255,255,0.3);line-height:1}
+  .vclose:hover{background:#f2f1ef;color:#1c1d1f;border-color:#f2f1ef}
+</style>
+</head>
+
+<body>
+<div style="width:100%; overflow-x:clip">
+
+<!-- ============ HERO ============ -->
+<header style="position:relative; min-height:100svh; display:flex; flex-direction:column; justify-content:flex-end; background:#5c5e62">
+  <img src="img/sagres-2-1280.webp"
+       srcset="img/sagres-2-640.webp 640w, img/sagres-2-1280.webp 1280w, img/sagres-2-1920.webp 1920w"
+       sizes="100vw" width="1920" height="1080" fetchpriority="high" decoding="async"
+       alt="Fortaleza de Sagres, vista aérea ao pôr do sol"
+       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 40%">
+  <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(28,29,31,0.42) 0%, rgba(28,29,31,0.05) 34%, rgba(28,29,31,0.16) 55%, rgba(28,29,31,0.55) 100%)"></div>
+  <div class="grain" style="opacity:0.14"></div>
+
+  <div style="position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:24px clamp(24px,5vw,64px); z-index:3">
+    <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#fff">4.ª Edição · 2026</div>
+    <div class="langswitch">
+      <button type="button" id="btn-pt" class="langbtn" aria-pressed="true" onclick="setLang('pt')">PT</button>
+      <button type="button" id="btn-en" class="langbtn" aria-pressed="false" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+
+  <div style="position:relative; z-index:2; padding:0 clamp(24px,5vw,64px) 40px; max-width:1280px; width:100%; margin:0 auto; box-sizing:border-box">
+    <h1 style="margin:0; font-family:'Saira Extra Condensed',sans-serif; font-weight:700; letter-spacing:0.02em; text-transform:uppercase; color:#fff; line-height:0.87; text-shadow:0 1px 24px rgba(0,0,0,0.25)">
+      <span style="display:block; font-weight:500; font-size:clamp(24px,4.2vw,48px); line-height:0.95">Costa</span>
+      <span style="display:block; font-weight:500; font-size:clamp(24px,4.2vw,48px); line-height:0.95; margin-bottom:8px">Vicentina</span>
+      <span style="display:block; font-size:clamp(52px,10vw,120px)">Early</span>
+      <span style="display:block; font-size:clamp(52px,10vw,120px)">Music</span>
+      <span style="display:block; font-size:clamp(52px,10vw,120px)">Fest'26</span>
+    </h1>
+    <div style="display:flex; flex-wrap:wrap; gap:8px 32px; align-items:flex-start; margin-top:24px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.55)">
+      <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:clamp(17px,2.2vw,22px); letter-spacing:0.06em; text-transform:uppercase; color:#fff; line-height:1.3">Vila do Bispo · Sagres · Aljezur · Lagos</div>
+      <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:clamp(17px,2.2vw,22px); letter-spacing:0.06em; color:#fff; line-height:1.3">22—29 agosto 2026</div>
+      <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:clamp(16px,2vw,20px); letter-spacing:0.06em; text-transform:uppercase; color:#e88b3d; line-height:1.3">
+        <span data-l="pt">Entrada Livre</span><span data-l="en">Free Entrance</span>
+      </div>
+    </div>
+    <div style="margin-top:16px; font-family:'Saira Condensed',sans-serif; font-weight:500; font-size:15px; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,0.85); line-height:1.55">concertos ● conversa e partilha ● aula aberta</div>
+  </div>
+</header>
+
+<!-- ============ INTRO ============ -->
+<section style="background:#f2f1ef; padding:64px clamp(24px,5vw,64px)">
+  <div style="max-width:760px; margin:0 auto">
+    <h2 class="h2xc" style="margin:0 0 24px; line-height:1.3; font-size:clamp(24px,3.6vw,36px)">
+      <span data-l="pt">4.ª Edição do "Costa Vicentina Early Music Fest" regressa a Vila do Bispo, Sagres e Aljezur, com extensão no Museu de Lagos!</span>
+      <span data-l="en">4th Edition of the "Costa Vicentina Early Music Fest" Returns to Vila do Bispo, Sagres and Aljezur, with a New Extension at the Lagos Museum!</span>
+    </h2>
+    <p style="margin:0; font-weight:400; font-size:17px; line-height:1.55; color:#33353a; text-wrap:pretty">
+      <span data-l="pt">De 22 a 29 de agosto de 2026, a Costa Vicentina recebe a 4ª edição do "Costa Vicentina Early Music Fest", organizado pel'O Corvo e a Raposa — Associação Cultural, estrutura apoiada pelo Município de Vila do Bispo. COSTA VICENTINA Early Music Fest é um projeto de divulgação da música historicamente informada no Barlavento Algarvio, numa perspetiva dialética entre a música antiga como potenciadora de diálogo intercultural e intertemporal entre a Ibéria e o Mundo, e entre o passado e o presente.</span>
+      <span data-l="en">From 22 to 29 August 2026, the Costa Vicentina will host the 4th edition of the Costa Vicentina Early Music Fest, organised by O Corvo e a Raposa — Associação Cultural, supported by the Municipality of Vila do Bispo. The COSTA VICENTINA Early Music Fest is a project dedicated to promoting historically informed music in the western Algarve (Barlavento Algarvio), exploring early music as a bridge for intercultural and intertemporal dialogue, between Iberia and the world, and between the past and the present.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ PROGRAMA ============ -->
+<section id="programa" style="background:#fff; padding:64px 0 32px">
+  <div style="max-width:1280px; margin:0 auto; padding:0 clamp(24px,5vw,64px); box-sizing:border-box">
+    <h2 class="h2xc" style="margin:0 0 16px; font-size:clamp(38px,6vw,64px)">
+      <span data-l="pt">Programa Geral</span><span data-l="en">General Programme</span>
+    </h2>
+    <div class="kicker" style="margin-bottom:64px">22—29 agosto 2026</div>
+
+    <!-- DIA 01 -->
+    <article style="display:flex; flex-wrap:wrap; gap:32px clamp(32px,4vw,48px); margin-bottom:96px; border-top:3px solid #1c1d1f; padding-top:24px">
+      <div class="daycol">
+        <img src="img/santo-antonio-1280.webp"
+             srcset="img/santo-antonio-640.webp 640w, img/santo-antonio-1280.webp 1280w, img/santo-antonio-1920.webp 1920w"
+             sizes="(min-width:820px) 45vw, 100vw" width="1920" height="1440" loading="lazy" decoding="async"
+             alt="Igreja de Santo António, Lagos, vista aérea" class="venueimg" style="object-position:58% 50%">
+        <div class="venuelabel">Igreja de Santo António</div>
+      </div>
+      <div class="daytext">
+        <div style="flex:none; width:clamp(56px,7vw,96px)"><div class="daynum">01</div></div>
+        <div style="flex:1; min-width:0">
+          <div class="daydate">22 de agosto · <span data-l="pt">sábado</span><span data-l="en">Saturday</span></div>
+          <div class="dayvenue">Museu de Lagos / Igreja de Santo António</div>
+          <div class="slot">
+            <div class="slotrow">
+              <div class="time">19:00</div>
+              <div style="min-width:0">
+                <div style="font-weight:600; font-size:17px; line-height:1.3">Concerto BOLSA ARTISTAS EMERGENTES LAGOS 1460</div>
+                <div class="ens" style="margin-top:8px">Ensemble Àpala</div>
+                <ul class="players">
+                  <li>Salvador Bastos Pinto | violino barroco</li>
+                  <li>Eduardo Alcântara | contrabaixo</li>
+                  <li>Vicente Morgado | arquialaúde e guitarra barroca</li>
+                  <li>Guilherme Lopes | ator (diseur)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- DIA 02 -->
+    <article style="display:flex; flex-wrap:wrap-reverse; gap:32px clamp(32px,4vw,48px); margin-bottom:96px; border-top:3px solid #1c1d1f; padding-top:24px">
+      <div class="daytext">
+        <div style="flex:none; width:clamp(56px,7vw,96px)"><div class="daynum">02</div></div>
+        <div style="flex:1; min-width:0">
+          <div class="daydate">23 de agosto · <span data-l="pt">domingo</span><span data-l="en">Sunday</span></div>
+          <div class="dayvenue">Fortaleza de Sagres</div>
+          <div style="font-weight:400; font-size:15px; line-height:1.55; color:#44464b; margin-top:8px">
+            <span data-l="pt">Dia Internacional em Memória do Tráfico de Escravos e da sua Abolição</span>
+            <span data-l="en">International Day for the Remembrance of the Slave Trade and its Abolition</span>
+          </div>
+          <div class="slot">
+            <div class="slotrow">
+              <div class="time">15:00</div>
+              <div style="min-width:0">
+                <div class="ens">Hugo Sanches <span style="font-weight:400; text-transform:none; color:#55575c">(ESMAE / FLUC)</span></div>
+                <div class="work">Conversa "Vozes na sombra: ecos da escravatura na música ibérica da era moderna"</div>
+              </div>
+            </div>
+          </div>
+          <div class="slot">
+            <div class="slotrow">
+              <div class="time">16:00</div>
+              <div style="min-width:0">
+                <div class="ens">O Bando de Surunyo <span style="font-weight:400; text-transform:none; color:#55575c">(Portugal)</span></div>
+                <div class="work">Concerto "O Cancioneiro Ibérico: Entre Celebração e Memória"</div>
+                <ul class="players">
+                  <li>Eunice Abranches d'Aguiar | soprano</li>
+                  <li>Patrícia Silveira | alto</li>
+                  <li>Carlos Meireles | tenor</li>
+                  <li>Sérgio Ramos | baixo</li>
+                  <li>Hugo Sanches | alaúde e direção</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="daycol">
+        <img src="img/sagres-1-1280.webp"
+             srcset="img/sagres-1-640.webp 640w, img/sagres-1-1280.webp 1280w, img/sagres-1-1920.webp 1920w"
+             sizes="(min-width:820px) 45vw, 100vw" width="1920" height="1080" loading="lazy" decoding="async"
+             alt="Fortaleza de Sagres, vista aérea" class="venueimg" style="object-position:70% 65%">
+        <div class="venuelabel">Fortaleza de Sagres</div>
+      </div>
+    </article>
+
+    <!-- DIA 03 -->
+    <article style="display:flex; flex-wrap:wrap; gap:32px clamp(32px,4vw,48px); margin-bottom:96px; border-top:3px solid #1c1d1f; padding-top:24px">
+      <div class="daycol">
+        <img src="img/aljezur-1280.webp"
+             srcset="img/aljezur-640.webp 640w, img/aljezur-1280.webp 1280w, img/aljezur-1920.webp 1920w"
+             sizes="(min-width:820px) 45vw, 100vw" width="1920" height="1080" loading="lazy" decoding="async"
+             alt="Igreja da Misericórdia de Aljezur, vista aérea" class="venueimg" style="object-position:50% 55%">
+        <div class="venuelabel">Aljezur</div>
+      </div>
+      <div class="daytext">
+        <div style="flex:none; width:clamp(56px,7vw,96px)"><div class="daynum">03</div></div>
+        <div style="flex:1; min-width:0">
+          <div class="daydate">28 de agosto · <span data-l="pt">sexta</span><span data-l="en">Friday</span></div>
+          <div class="dayvenue">Igreja da Misericórdia de Aljezur</div>
+          <div class="slot">
+            <div class="slotrow">
+              <div class="time">15:00</div>
+              <div style="min-width:0">
+                <div class="ens">Na Rota do Peregrino</div>
+                <div class="work">Ensaio Aberto c/ comunidade no Salão Polivalente ERPI Aljezur</div>
+              </div>
+            </div>
+          </div>
+          <div class="slot">
+            <div class="slotrow">
+              <div class="time">21:00</div>
+              <div style="min-width:0">
+                <div class="ens">Na Rota do Peregrino</div>
+                <div class="work">Concerto "Rotas de peregrinação: uma viagem a Roma, Montserrat e Compostela"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- DIA 04 -->
+    <article style="display:flex; flex-wrap:wrap-reverse; gap:32px clamp(32px,4vw,48px); margin-bottom:32px; border-top:3px solid #1c1d1f; padding-top:24px">
+      <div class="daytext">
+        <div style="flex:none; width:clamp(56px,7vw,96px)"><div class="daynum">04</div></div>
+        <div style="flex:1; min-width:0">
+          <div class="daydate">29 de agosto · <span data-l="pt">sábado</span><span data-l="en">Saturday</span></div>
+          <div class="dayvenue">Igreja (Matriz) de Nossa Senhora da Conceição, Vila do Bispo</div>
+          <div class="slot">
+            <div class="slotrow">
+              <div class="time">11:00</div>
+              <div style="min-width:0">
+                <div style="font-weight:600; font-size:17px; line-height:1.3">Aula Aberta "CANTIGAS DE SANTA MARIA DE AFONSO X" c/ Joana Godinho</div>
+                <div style="font-weight:400; font-size:15px; line-height:1.55; color:#44464b; margin-top:16px">
+                  <span data-l="pt">inscrições</span><span data-l="en">registration</span>:
+                  <a href="mailto:ocorvoearaposacultural@gmail.com">ocorvoearaposacultural<wbr>@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slot">
+            <div class="slotrow">
+              <div class="time">18:00</div>
+              <div style="min-width:0">
+                <div class="ens">Na Rota do Peregrino</div>
+                <div class="work">Concerto Encerramento "Rotas de peregrinação: uma viagem a Roma, Montserrat e Compostela"</div>
+                <ul class="players">
+                  <li>Mauricio Molina | direção musical, pandeiro, adufe, nakkara, guimbarda</li>
+                  <li>Daniela Tomaz | direção, flauta travessa e sinos</li>
+                  <li>Joana Godinho | mezzo-soprano</li>
+                  <li>Thiago Vaz | tenor</li>
+                  <li>Enrique Pastor | cítola</li>
+                  <li>Carme Mampel | organetto</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="daycol">
+        <img src="img/vilabispo-1-1280.webp"
+             srcset="img/vilabispo-1-640.webp 640w, img/vilabispo-1-1280.webp 1280w, img/vilabispo-1-1920.webp 1920w"
+             sizes="(min-width:820px) 45vw, 100vw" width="1920" height="1080" loading="lazy" decoding="async"
+             alt="Igreja (Matriz) de Nossa Senhora da Conceição, Vila do Bispo, vista aérea" class="venueimg" style="object-position:50% 45%">
+        <div class="venuelabel">Vila do Bispo</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ARQUIVO EM VÍDEO ============ -->
+<section style="background:#1c1d1f; padding:24px 0">
+  <div class="vwrap">
+    <div class="vcar" id="vcar">
+    <!-- VIDEOS:START -->
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1114564909" data-vid="1114564909" data-titulo="AntiQuorum (PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1114564909-480.webp"
+               srcset="img/video-1114564909-480.webp 480w, img/video-1114564909-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '25 | III Ed. #03 Fortaleza de Sagres</span>
+        </a>
+        <div class="vkicker">Fortaleza de Sagres · '25</div>
+        <div class="vtitle">AntiQuorum (PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1113655629" data-vid="1113655629" data-titulo="Noa Noa Ensemble (PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1113655629-480.webp"
+               srcset="img/video-1113655629-480.webp 480w, img/video-1113655629-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '25 | III Ed. #01 Vila do Bispo</span>
+        </a>
+        <div class="vkicker">Vila do Bispo · '25</div>
+        <div class="vtitle">Noa Noa Ensemble (PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1113942618" data-vid="1113942618" data-titulo="Noa Noa Ensemble (PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1113942618-480.webp"
+               srcset="img/video-1113942618-480.webp 480w, img/video-1113942618-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '25 | III Ed. #02 Aljezur</span>
+        </a>
+        <div class="vkicker">Aljezur · '25</div>
+        <div class="vtitle">Noa Noa Ensemble (PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1099379040" data-vid="1099379040" data-titulo="II Edição 2024"
+           target="_blank" rel="noopener">
+          <img src="img/video-1099379040-480.webp"
+               srcset="img/video-1099379040-480.webp 480w, img/video-1099379040-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '24 | II Ed.</span>
+        </a>
+        <div class="vkicker">Vila do Bispo · '24</div>
+        <div class="vtitle">II Edição 2024</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1080405555" data-vid="1080405555" data-titulo="EuropAntiqua (IT/DE/PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1080405555-480.webp"
+               srcset="img/video-1080405555-480.webp 480w, img/video-1080405555-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '24 | #01 EuropAntiqua [it/de/pt]</span>
+        </a>
+        <div class="vkicker">Vila do Bispo · '24</div>
+        <div class="vtitle">EuropAntiqua (IT/DE/PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1093781826" data-vid="1093781826" data-titulo="Ferrabosco Ensemble (ES)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1093781826-480.webp"
+               srcset="img/video-1093781826-480.webp 480w, img/video-1093781826-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '24 | #02 FERRABOSCO ENSEMBLE (Consort de viola da gamba)</span>
+        </a>
+        <div class="vkicker">Vila do Bispo · '24</div>
+        <div class="vtitle">Ferrabosco Ensemble (ES)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1057132760" data-vid="1057132760" data-titulo="Ensamble Ditirambo (MX/PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1057132760-480.webp"
+               srcset="img/video-1057132760-480.webp 480w, img/video-1057132760-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '21 | #04 Ensamble Ditirambo (mx/pt)</span>
+        </a>
+        <div class="vkicker">Costa Vicentina EMF · '21</div>
+        <div class="vtitle">Ensamble Ditirambo (MX/PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1049502837" data-vid="1049502837" data-titulo="Ensemble Ars Lusitana (PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1049502837-480.webp"
+               srcset="img/video-1049502837-480.webp 480w, img/video-1049502837-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '21 | #01 Ensemble Ars Lusitana (pt)</span>
+        </a>
+        <div class="vkicker">Ermida de Guadalupe · '21</div>
+        <div class="vtitle">Ensemble Ars Lusitana (PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1079118007" data-vid="1079118007" data-titulo="Heroínas (PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1079118007-480.webp"
+               srcset="img/video-1079118007-480.webp 480w, img/video-1079118007-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '21 | #05 Heroínas (pt)</span>
+        </a>
+        <div class="vkicker">Costa Vicentina EMF · '21</div>
+        <div class="vtitle">Heroínas (PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/661769611" data-vid="661769611" data-titulo="Izmir Raposeira Baroque Ensemble (TR/PT)"
+           target="_blank" rel="noopener">
+          <img src="img/video-661769611-480.webp"
+               srcset="img/video-661769611-480.webp 480w, img/video-661769611-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '21 | #02 Izmir Raposeira Baroque Ensemble (tk/pt)</span>
+        </a>
+        <div class="vkicker">Ermida de Guadalupe · '21</div>
+        <div class="vtitle">Izmir Raposeira Baroque Ensemble (TR/PT)</div>
+      </article>
+      <article class="vcard">
+        <a class="vthumb" href="https://vimeo.com/1052452699" data-vid="1052452699" data-titulo="Terrae Iberae (PT/ES)"
+           target="_blank" rel="noopener">
+          <img src="img/video-1052452699-480.webp"
+               srcset="img/video-1052452699-480.webp 480w, img/video-1052452699-800.webp 800w"
+               sizes="(min-width:820px) 340px, 78vw" width="800" height="450"
+               loading="lazy" decoding="async" alt="">
+          <span class="vplay"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="sr">COSTA VICENTINA Early Music Fest '21 | #03 Terrae Iberae (pt/es)</span>
+        </a>
+        <div class="vkicker">Costa Vicentina EMF · '21</div>
+        <div class="vtitle">Terrae Iberae (PT/ES)</div>
+      </article>
+    <!-- VIDEOS:END -->
+    </div>
+    <button type="button" class="vbtn vprev" id="vprev">
+      <span data-l="pt" class="sr">Vídeo anterior</span><span data-l="en" class="sr">Previous video</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+    </button>
+    <button type="button" class="vbtn vnext" id="vnext">
+      <span data-l="pt" class="sr">Vídeo seguinte</span><span data-l="en" class="sr">Next video</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- Reproductor a pantalla grande. <dialog> nativo: el navegador ya resuelve el foco, el
+     fondo y la tecla Esc. El iframe se crea al abrir y se destruye al cerrar, así el vídeo
+     deja de sonar y no queda cargado. -->
+<dialog id="vmodal" class="vmodal">
+  <div class="vmodal-in">
+    <div class="vframe" id="vframe"></div>
+    <p class="vmodal-t" id="vmodal-t"></p>
+  </div>
+  <button type="button" class="vclose" id="vclose">
+    <span data-l="pt" class="sr">Fechar vídeo</span><span data-l="en" class="sr">Close video</span>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+</dialog>
+
+<!-- ============ MANIFESTO ============ -->
+<section style="position:relative; background:#83858a; padding:96px clamp(24px,5vw,64px); overflow:hidden">
+  <img src="img/poster-640.webp" alt="" loading="lazy" decoding="async" width="1080" height="1920"
+       style="position:absolute; top:-32px; bottom:-32px; left:-32px; right:-32px; width:auto; height:auto; object-fit:cover; object-position:12% 30%; opacity:0.09; filter:blur(12px); mix-blend-mode:luminosity">
+  <img src="img/poster-640.webp" alt="" loading="lazy" decoding="async" width="1080" height="1920"
+       style="position:absolute; top:-32px; bottom:-32px; left:58%; right:-32px; width:auto; height:auto; object-fit:cover; object-position:100% 30%; opacity:0.38; filter:blur(6px); mix-blend-mode:luminosity">
+  <div style="position:absolute; inset:0; background:radial-gradient(70% 60% at 15% 90%, rgba(164,85,26,0.22), transparent 70%), linear-gradient(90deg, rgba(38,40,44,0.78) 0%, rgba(38,40,44,0.72) 55%, rgba(38,40,44,0.55) 100%)"></div>
+  <div class="grain" style="opacity:0.16"></div>
+  <div style="position:relative; z-index:2; max-width:860px; margin:0 auto">
+    <h2 style="margin:0 0 32px; font-family:'Saira Extra Condensed',sans-serif; font-weight:700; letter-spacing:0.02em; text-transform:uppercase; color:#fff; line-height:0.87; font-size:clamp(40px,7.5vw,80px)">
+      <span data-l="pt">A Música Antiga<br>não é Antiga.</span>
+      <span data-l="en">Early Music<br>is not Old.</span>
+    </h2>
+    <p style="margin:0 0 24px; font-weight:400; font-size:17px; line-height:1.55; color:#fff; max-width:680px; text-wrap:pretty">
+      <span data-l="pt">Somos contra o cronocentrismo, isto é, a ideia de que a música do presente é uma evolução em relação à música do passado.</span>
+      <span data-l="en">We are against chronocentrism, i.e. the idea that the music of the present is an evolution in relation to the music of the past.</span>
+    </p>
+    <blockquote style="margin:0 0 24px; padding-left:24px; border-left:3px solid #e88b3d; font-family:'Saira Condensed',sans-serif; font-weight:600; font-size:clamp(22px,3.2vw,30px); line-height:1.3; color:#fff">
+      <span data-l="pt">"A música é a melhor luta contra a amnésia histórica da humanidade"</span>
+      <span data-l="en">"Music is the best antidote against humanity's historical amnesia"</span>
+      <footer style="margin-top:16px; font-family:'Saira',sans-serif; font-weight:500; font-size:14px; line-height:1.55; color:#ffffff">
+        <span data-l="pt">Jordi Savall, músico e embaixador da União Europeia para o diálogo intercultural e artista para a paz</span>
+        <span data-l="en">Jordi Savall, musician and European Union Ambassador for Intercultural Dialogue and Artist for Peace</span>
+      </footer>
+    </blockquote>
+    <p style="margin:0; font-weight:400; font-size:17px; line-height:1.55; color:#fff; max-width:680px; text-wrap:pretty">
+      <span data-l="pt">Valorizamos por isso a circulação nacional e internacional de artistas que trabalham entre-mundos, entre-géneros e entre-regiões, como forma de humilde contributo para a sociedade do esquecimento em que vivemos.</span>
+      <span data-l="en">We therefore value the national and international circulation of artists who work between-worlds, between-genres and between-regions, as a form of humble contribute against the nowadays society of oblivion.</span>
+    </p>
+
+    <p style="margin:24px 0 0; font-weight:400; font-size:17px; line-height:1.55; color:#fff; max-width:680px; text-wrap:pretty">
+      <span data-l="pt">COSTA VICENTINA Early Music Fest é um projeto de divulgação da música historicamente informada no Barlavento Algarvio, envolvendo músicos profissionais nacionais e internacionais, numa perspetiva dialética entre a música antiga como potenciadora de diálogo intercultural e intertemporal. Para 2025, mantivemos a parceria estratégica com Município de Vila do Bispo e avançámos com propostas em parceria com o Município de Aljezur / Santa Casa da Misericórdia de Aljezur, com o apoio da CCDR I.P e Fortaleza de Sagres / Museus e Monumentos EPE.</span>
+      <span data-l="en">The COSTA VICENTINA Early Music Fest brings to the Algarve national and international professional musicians whose specialised historical perspective explores and demonstrates the many cross-cultural influences of this early music. We hear the musical connections between the West and the East, between Europe and Asia, and between the past and the present. For 2025, we extended the strategic partnership with the Vila do Bispo Municipality to the partnership with Aljezur Municipality / Santa Casa da Misericórdia de Aljezur, and Fortaleza de Sagres / Sagres Fortress (Museums and Monuments).</span>
+    </p>
+    <p style="margin:24px 0 0; font-weight:400; font-size:17px; line-height:1.55; color:#fff; max-width:680px; text-wrap:pretty">
+      <span data-l="pt">A 1.ª Edição aconteceu em agosto 2021, na Ermida de N. Senhora da Guadalupe, Vila do Bispo, com a estreia de 5 residências artísticas de músicos nacionais e internacionais, oriundos de Portugal, Turquia e México, e a 2.ª Edição, em agosto 2024, iniciou uma nova parceria estratégica com o Município de Vila do Bispo, estreando 2 residências artísticas com músicos de Portugal, Espanha e Itália.</span>
+      <span data-l="en">The 1st Edition took place in August 2021, at the Ermida de N. Senhora da Guadalupe, Vila do Bispo, with the debut of 5 artistic residencies by national and international musicians from Portugal, Turkey and Mexico, and the 2nd Edition, in August 2024, began a new strategic partnership with the Vila do Bispo Municipality, debuting 2 artistic residencies with musicians from Portugal, Spain and Italy.</span>
+    </p>
+    <p style="margin:24px 0 0; font-weight:400; font-size:17px; line-height:1.55; color:#fff; max-width:680px; text-wrap:pretty">
+      <span data-l="pt">Entre 2021 e 2024, O Corvo e a Raposa, promotora deste projeto e sedeada na Raposeira, Vila do Bispo, manteve o seu foco no desenvolvimento da música historicamente informada em Portugal, nomeadamente música medieval (Ensemble Med, Encontro de Música Medieval Caminho Português de Santiago em Ponte de Lima, Na Rota do Peregrino), associada também ao diálogo intercultural e à percussão histórica (Encontros Med, Idanha-a-Nova, desde 2018). É também fundamental a relação com espaços históricos, destacando a belíssima Ermida de Nossa Senhora de Guadalupe (Raposeira, Vila do Bispo), com um trabalho continuado d’O Corvo desde “Dias das Virgens Negras” ao abrigo do programa de Dinamização e Valorização dos Monumentos da Direção Regional de Cultura do Algarve (2018-2023) e continuado na 1.ª Edição deste Festival (2021), assim como agora na Igreja (Matriz) de N. Sra. da Conceição, Vila do Bispo, desde 2024 e agora Igreja da Misericórdia de Aljezur e Fortaleza de Sagres, desde 2025.</span>
+      <span data-l="en">During this hiatus, between 2021 and 2024, O Corvo e a Raposa, the promoter of this project and based in Raposeira, Vila do Bispo, maintained its focus on the development of historically informed music in Portugal, namely medieval music (Ensemble Med, Portuguese Way of St James Medieval Music Meeting in Ponte de Lima, On the Pilgrim’s Route), also associated with intercultural dialogue and historical percussion (Encontros Med, Idanha-a-Nova, since 2018). The relationship with historic spaces is also fundamental, highlighting the beautiful Hermitage of Nossa Senhora de Guadalupe (Raposeira, Vila do Bispo), with ongoing work by O Corvo since ‘Dias das Virgens Negras’ under the Algarve Regional Directorate for Culture’s Monuments Dynamisation and Enhancement programme (2018-2023) and continued in the 1st Edition of this Festival (2021), as well the Church of N. Sra. da Conceição, Vila do Bispo, since 2024 and since 2025, the Igreja da Misericórdia de Aljezur and Fortaleza de Sagres.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ BILHETEIRA ============ -->
+<section style="background:#f2f1ef; padding:64px clamp(24px,5vw,64px)">
+  <div style="max-width:860px; margin:0 auto">
+    <h2 class="h2xc" style="margin:0 0 16px; font-size:clamp(32px,5vw,48px)">Bilheteira / Ticket Office</h2>
+    <div style="font-family:'Saira Extra Condensed',sans-serif; font-weight:700; letter-spacing:0.02em; font-size:24px; text-transform:uppercase; color:#a4551a; line-height:1.3">Entrada Livre! · Free Entrance!</div>
+    <p style="margin:8px 0 32px; font-weight:400; font-size:16px; line-height:1.55; color:#33353a">
+      <span data-l="pt">A entrada é livre, mas a lotação é limitada.</span>
+      <span data-l="en">Admission is free, though seating is limited.</span>
+    </p>
+    <div class="kicker" style="margin-bottom:16px">
+      <span data-l="pt">Mais informações e inscrições</span><span data-l="en">Information and registration</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:16px; align-items:stretch">
+      <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
+        <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Igreja de Santo António / Museu de Lagos</div>
+        <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0">22 ago</div>
+        <a href="mailto:museu@cm-lagos.pt" style="font-weight:400; font-size:15px; overflow-wrap:anywhere">museu<wbr>@cm-lagos.pt</a>
+      </div>
+      <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
+        <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Fortaleza de Sagres</div>
+        <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0">23 ago</div>
+        <a href="mailto:geral.fsagres@museusemonumentos.pt" style="font-weight:400; font-size:14px; overflow-wrap:anywhere">geral.fsagres<wbr>@museusemonumentos.pt</a>
+      </div>
+      <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
+        <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Igreja da Misericórdia, Aljezur</div>
+        <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0">28 ago</div>
+        <div style="font-weight:400; font-size:15px; line-height:1.55; color:#33353a"><span data-l="pt">Sem inscrição, mediante lotação dos espaços</span><span data-l="en">No registration required, subject to venue capacity</span></div>
+      </div>
+      <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
+        <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Igreja (Matriz) de Nossa Senhora da Conceição, Vila do Bispo</div>
+        <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0">29 ago</div>
+        <div style="font-weight:400; font-size:15px; line-height:1.55; color:#33353a"><span data-l="pt">Sem inscrição, mediante lotação dos espaços</span><span data-l="en">No registration required, subject to venue capacity</span></div>
+      </div>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:8px 32px; margin-top:32px; font-size:15px">
+      <a href="https://www.facebook.com/share/196qUiABKu" target="_blank" rel="noopener" style="font-weight:600">Evento Facebook ↗</a>
+      <div style="font-weight:400; color:#33353a">+info: <a href="mailto:ocorvoearaposacultural@gmail.com" style="overflow-wrap:anywhere">ocorvoearaposacultural<wbr>@gmail.com</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FICHA ARTÍSTICA ============ -->
+<section style="background:#fff; padding:64px clamp(24px,5vw,64px)">
+  <div style="max-width:860px; margin:0 auto">
+    <h2 class="h2xc" style="margin:0 0 32px; font-size:clamp(28px,4.2vw,40px)">Ficha Artística / Credits</h2>
+    <dl style="margin:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px 32px; font-size:15px; line-height:1.55">
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Promotor</dt><dd style="margin:0; font-weight:400; color:#33353a">O Corvo e a Raposa</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Parceria Estratégica</dt><dd style="margin:0; font-weight:400; color:#33353a">Município de Vila do Bispo / Museu Celeiro da História</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Parceiros</dt><dd style="margin:0; font-weight:400; color:#33353a">Fortaleza de Sagres — Museus e Monumentos de Portugal E.P.E., Município de Aljezur, Museu de Lagos / Município de Lagos</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Apoio / Support</dt><dd style="margin:0; font-weight:400; color:#33353a">CCDR Algarve I.P., Diocese do Algarve, Santa Casa da Misericórdia de Aljezur, Paróquia de Vila do Bispo (RVBS), Fundação GDA</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Parceiro Media</dt><dd style="margin:0; font-weight:400; color:#33353a">Antena2</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Artistic and Executive Direction</dt><dd style="margin:0; font-weight:400; color:#33353a">Daniela Tomaz</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Graphic Design</dt><dd style="margin:0; font-weight:400; color:#33353a">Z</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Videography</dt><dd style="margin:0; font-weight:400; color:#33353a">Franco Sanguinetti</dd></div>
+      <div><dt style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#55575c; margin-bottom:8px">Social Media</dt><dd style="margin:0; font-weight:400; color:#33353a">Mayra Paolinelli</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ EDIÇÕES ANTERIORES ============ -->
+<!-- <details> nativo: se abre y se cierra sin JavaScript, y los buscadores y los lectores
+     de pantalla ya entienden la estructura. Todos empiezan cerrados. -->
+<section style="background:#f2f1ef; padding:64px clamp(24px,5vw,64px)">
+  <div style="max-width:1040px; margin:0 auto">
+    <h2 class="h2xc" style="margin:0 0 32px; font-size:clamp(28px,4.2vw,40px)">
+      <span data-l="pt">Edições Anteriores</span><span data-l="en">Previous Editions</span>
+    </h2>
+
+    <details class="ed">
+      <summary class="ed-s">
+        <span><span data-l="pt">III Edição</span><span data-l="en">3rd Edition</span> | 2025</span>
+        <span class="ed-i" aria-hidden="true"></span>
+      </summary>
+      <div class="ed-b">
+        <p data-l="pt">A 3.ª edição teve lugar de 16 a 24 de agosto de 2025. O concerto de abertura aconteceu com Noa Noa Ensemble (Filipe Faria, Tiago Matias e Baltazar Molina) a 16 de agosto pelas 18:00 na Igreja (Matriz) de Nossa Senhora da Conceição, Vila do Bispo, tendo como foco a música ibérica entre a ancestralidade e contemporaneidade, com o programa “Língua”. Às 11h00, no mesmo espaço, dando lugar à aula aberta sobre instrumentos antigos de corda dedilhada, com Tiago Matias. Noa Noa Ensemble apresentou-se também a 17 de agosto pelas 16:00, na Igreja de Misericórdia de Aljezur, numa extensão da parceria com o Município de Aljezur e Santa Casa da Misericórdia de Aljezur e o apoio da CCDR I.P. COSTA VICENTINA Early Music Fest encerrou a 23/24 de agosto na Fortaleza de Sagres - Museus e Monumentos de Portugal E.P.E, num fim-de-semana dedicado ao Dia Internacional em Memória do Tráfico de Escravos e da sua Abolição. Iniciou com concerto do Ensemble AntiQuorum (Ana Sousa, Nuno de Mendonça Raimundo et al) dia 23 de agosto, 17:00, apostando na música ibérica da época da expansão marítima e terminou dia 24 de agosto, domingo, com uma oficina/performance dirigida por Ana Celorico Machado pelas 14:00 e uma palestra de Nuno de Mendonça Raimundo (CESEM) pelas 16:00, encerrando assim a 3.ª Edição.</p>
+        <p data-l="en">From 16 to 24 August 2025, the Costa Vicentina hosted the 3rd edition of the Costa Vicentina Early Music Fest, organised by O Corvo e a Raposa – Associação Cultural in strategic partnership with the Municipality of Vila do Bispo. For 2025, the opening concert will feature Noa Noa Ensemble (Filipe Faria, Tiago Matias and Baltazar Molina) on 16 August at 6pm in the main church (Igreja Matriz) of Nossa Senhora da Conceição, Vila do Bispo, focused on Iberian music between ancestry and contemporaneity, with the programme ‘Língua’. At 11:00 am, in the same space, there was an open class on historical plucked string instruments, with Tiago Matias. Noa Noa Ensemble performed on 17 August at 4 pm at the Church of Misericórdia de Aljezur, as part of an extension of the partnership with the Municipality of Aljezur and Santa Casa da Misericórdia de Aljezur, with the support of CCDR I.P. COSTA VICENTINA Early Music Fest ended on the weekend of 23rd and 24th August at the Fortaleza de Sagres - Museus e Monumentos de Portugal E.P.E, dedicated to the International Day for the Remembrance of the Slave Trade and its Abolition. It started with a concert by the Ensemble AntiQuorum (Ana Sousa, Nuno de Mendonça Raimundo et al) on 23rd August at 5 p.m., focusing on Iberian music from the era of maritime expansion, and ended on 24th August, Sunday, with a workshop/performance directed by Ana Celorico Machado at 2:00 pm and a lecture by Nuno de Mendonça Raimundo (CESEM) at 4:00 pm, thus closing the 3rd Edition.</p>
+        <a class="ed-dl" href="https://ocorvoearaposa.pt/cvemf2025.pdf" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+          <span data-l="pt">Programa 2025 (PDF · 6 MB)</span><span data-l="en">Programme 2025 (PDF · 6 MB)</span>
+        </a>
+      </div>
+    </details>
+
+    <details class="ed">
+      <summary class="ed-s">
+        <span><span data-l="pt">II Edição</span><span data-l="en">2nd Edition</span> | 2024</span>
+        <span class="ed-i" aria-hidden="true"></span>
+      </summary>
+      <div class="ed-b">
+        <p data-l="pt">A II Edição teve lugar de 24 a 31 Agosto 2024, na Igreja Matriz de Vila do Bispo, em parceria com o Município de Vila do Bispo e com o apoio Diocese do Algarve | Paróquia Raposeira e Vila do Bispo e Antena2. Nos últimos dois sábados de agosto, às 18h, a Igreja Matriz de Vila do Bispo foi palco de 2 concertos, que lhe devolveram a sonoridade dos instrumentos antigos, pela mão de artistas que trabalham os cordofones históricos, nomeadamente a nyckelharpa ou viola d’amore a chiavi e a viola da gamba. Nesta II Edição, o foco foi a promoção de ensembles com novos projetos, frutos de residências artísticas realizadas no âmbito do festival.</p>
+        <p data-l="pt">Em paralelo aos concertos, o “Costa Vicentina Early Music Fest” trouxe também 2 aulas abertas, dedicadas às temáticas dos concertos do ensemble respetivo, que acontecem na Igreja Matriz de Vila do Bispo, nos dias 24 e 31 Agosto, às 10h.</p>
+        <p data-l="en">The II Edition took place from 24 to 31 August 2024 at the Igreja Matriz of Vila do Bispo, in partnership with the Vila do Bispo Municipality and with the support of the Diocese of the Algarve | Raposeira and Vila do Bispo Parish and Antena2. On the last two Saturdays of August, at 6pm, the Igreja Matriz of Vila do Bispo was the stage for two concerts that brought back the sound of early music instruments, by the hand of artists who work with historical chordophones, namely the nyckelharpa or viola d'amore a chiavi and the viola da gamba.</p>
+        <p data-l="en">In this second edition, the focus was on promoting ensembles with new projects, the fruit of artistic residencies organised as part of the festival. Alongside the concerts, the ‘Costa Vicentina Early Music Fest’ also brought two open classes, dedicated to the themes of the respective ensemble concerts, which also took place Igreja Matriz of Vila do Bispo on the 24th and 31st August at 10am.</p>
+        <a class="ed-dl" href="https://www.festivalfinder.eu" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+          Festival Finder
+        </a>
+      </div>
+    </details>
+
+    <details class="ed">
+      <summary class="ed-s">
+        <span><span data-l="pt">I Edição</span><span data-l="en">1st Edition</span> | 2021</span>
+        <span class="ed-i" aria-hidden="true"></span>
+      </summary>
+      <div class="ed-b">
+        <p data-l="pt">A I Edição teve lugar dia 31 de julho e todos os sábados de agosto de 2021 pelas 16h00, devolvendo a sonoridade dos instrumentos antigos à Ermida de N. Sra. de Guadalupe, Raposeira, Vila do Bispo, Algarve. Em paralelo aos concertos presenciais, o “Costa Vicentina Early Music Fest” traz também a difusão online via facebook O Corvo e a Raposa, por ocasião do Dia Mundial da Música, que se celebra anualmente a 1 de Outubro de 2021, lançando cada um dos 5 Concertos, em cada uma das Sextas-feiras desse mês. A 1.ª Ed. foi financiada pelo Programa Garantir Cultura, com parceiro institucional República Portuguesa - Ministério da Cultura e o apoio da Direção Regional de Cultura do Algarve e Antena2.</p>
+        <p data-l="en">This first edition of the Festival took place on Saturday July 31st and thereafter on every Saturday during August 2021 at 4.00 pm, bringing back the sounds of historical instruments to the Chapel of Nossa Senhora de Guadalupe, located near Raposeira, Vila do Bispo, whose concerts were soon fully booked, to the limits of the places available in the Chapel.</p>
+        <p data-l="en">In parallel to the concerts, the ‘Costa Vicentina Early Music Fest’ will also bring online streaming of total and partial concerts, via facebook O Corvo e a Raposa, on the occasion of International Music Day, celebrated every year on the 1st October, presenting each of the 5 Concerts, on each Friday of the month.</p>
+        <p data-l="en">The 1st edition was funded by the Garantir Cultura programme, with the Portuguese Republic - Ministry of Culture as institutional partner and with the support of the Algarve Regional Directorate for Culture and Antena2.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px">
+          <a class="ed-dl" href="https://www.ocorvoearaposa.pt/programacvemf.pdf" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+            <span data-l="pt">Programa 2021 (PDF · 1,5 MB)</span><span data-l="en">Programme 2021 (PDF · 1.5 MB)</span>
+          </a>
+          <a class="ed-dl" href="https://www.festivalfinder.eu" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            Festival Finder
+          </a>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:#1c1d1f; color:#e8e8e6; padding:64px clamp(24px,5vw,64px)">
+  <div style="max-width:1040px; margin:0 auto">
+
+    <div style="display:flex; flex-wrap:wrap; gap:16px 24px; align-items:center">
+      <div style="font-family:'Saira Extra Condensed',sans-serif; font-weight:700; letter-spacing:0.02em; font-size:22px; text-transform:uppercase; line-height:1.15">O Corvo e a Raposa <span style="font-weight:500; color:rgba(255,255,255,0.72)">— Associação Cultural</span></div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px 24px; font-size:15px">
+        <a class="flink" href="mailto:ocorvoearaposacultural@gmail.com" style="overflow-wrap:anywhere">ocorvoearaposacultural<wbr>@gmail.com</a>
+        <a class="flink" href="https://ocorvoearaposa.pt" target="_blank" rel="noopener">ocorvoearaposa.pt</a>
+      </div>
+      <div style="display:flex; gap:16px; margin-left:auto">
+        <a class="soc" href="https://vimeo.com/ocorvoearaposa" target="_blank" rel="noopener" aria-label="Vimeo: ocorvoearaposa" title="Vimeo: ocorvoearaposa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.4 7.4c-.1 2.2-1.6 5.3-4.6 9.1-3.1 4-5.7 6-7.8 6-1.3 0-2.4-1.2-3.3-3.6l-1.8-6.6c-.7-2.4-1.4-3.6-2.2-3.6-.2 0-.8.4-1.8 1.1L-.2 8.4c1.1-1 2.3-2 3.4-3 1.5-1.3 2.7-2 3.4-2.1 1.8-.2 2.9 1.1 3.3 3.7.5 2.9.8 4.7 1 5.4.5 2.4 1.1 3.6 1.8 3.6.5 0 1.3-.8 2.3-2.5 1-1.6 1.6-2.9 1.7-3.7.2-1.4-.4-2.1-1.7-2.1-.6 0-1.2.1-1.9.4 1.3-4 3.6-6 7-5.8 2.5.1 3.7 1.7 3.5 5.1z"/></svg>
+        </a>
+        <a class="soc" href="https://facebook.com/ocorvoearaposa" target="_blank" rel="noopener" aria-label="Facebook: ocorvoearaposa" title="Facebook: ocorvoearaposa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.5 8.5V6.8c0-.8.5-1.3 1.3-1.3h1.7V2h-2.8c-2.6 0-4.2 1.9-4.2 4.5v2H8v3.5h2.5V22h4v-10h2.8l.5-3.5h-3.3z"/></svg>
+        </a>
+        <a class="soc" href="https://instagram.com/ocorvoearaposacultural" target="_blank" rel="noopener" aria-label="Instagram: ocorvoearaposacultural" title="Instagram: ocorvoearaposacultural">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a class="soc" href="mailto:ocorvoearaposacultural@gmail.com" aria-label="Email: ocorvoearaposacultural@gmail.com" title="Email: ocorvoearaposacultural@gmail.com">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect><path d="M3.5 6.5 12 13l8.5-6.5"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Cierre: solo el domínio. Créditos y apoios vivem na Ficha Artística, não se repetem aqui. -->
+    <div style="margin-top:32px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.18); font-family:'Saira Condensed',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,0.65); line-height:1.55">costavicentinaemf.pt</div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+  function setLang(l) {
+    document.documentElement.dataset.lang = l;
+    document.documentElement.lang = l === 'en' ? 'en' : 'pt';
+    document.getElementById('btn-pt').setAttribute('aria-pressed', String(l === 'pt'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(l === 'en'));
+    try { localStorage.setItem('cvemf-lang', l); } catch (e) {}
+  }
+  /* ---- Carrusel de vídeo ----
+     Bucle infinito: el HTML trae un solo bloque de tarjetas y aquí se clona a los lados,
+     dejando al visitante en el del medio. Al acercarse a un extremo se salta un bloque
+     entero, sin animación: como los tres son iguales, el salto no se percibe y se puede
+     arrastrar sin fin en ambos sentidos. Las copias van con aria-hidden para no repetirse
+     a los lectores de pantalla, y clonar en el navegador evita triplicar el peso del HTML.
+     Sin JavaScript el carrusel sigue arrastrándose (scroll nativo) y cada miniatura es un
+     enlace normal al vídeo en Vimeo. */
+  (function () {
+    var car = document.getElementById('vcar');
+    if (!car) return;
+
+    var reales = Array.prototype.slice.call(car.children);
+    if (reales.length) {
+      var antes = document.createDocumentFragment();
+      var despues = document.createDocumentFragment();
+      reales.forEach(function (el) {
+        [antes, despues].forEach(function (frag) {
+          var copia = el.cloneNode(true);
+          copia.setAttribute('aria-hidden', 'true');
+          var enlace = copia.querySelector('.vthumb');
+          if (enlace) enlace.tabIndex = -1;
+          frag.appendChild(copia);
+        });
+      });
+      car.insertBefore(antes, car.firstChild);
+      car.appendChild(despues);
+    }
+
+    // El reproductor sólo se carga al pulsar play, y lo hace dentro del modal: 11 iframes
+    // de Vimeo de entrada pesarían más que el resto del sitio junto.
+    var modal = document.getElementById('vmodal');
+    var marco = document.getElementById('vframe');
+    var rotulo = document.getElementById('vmodal-t');
+    var soporta = modal && typeof modal.showModal === 'function';
+    var origen = null;
+
+    function cerrar() { if (modal.open) modal.close(); }
+
+    car.addEventListener('click', function (e) {
+      var enlace = e.target.closest('.vthumb');
+      if (!enlace || !enlace.dataset.vid) return;
+      // Sin <dialog> (navegador antiguo) el enlace hace lo suyo y abre Vimeo.
+      if (!soporta) return;
+      e.preventDefault();
+      origen = enlace;
+      var f = document.createElement('iframe');
+      f.src = 'https://player.vimeo.com/video/' + enlace.dataset.vid +
+              '?autoplay=1&title=0&byline=0&portrait=0&dnt=1';
+      f.allow = 'autoplay; fullscreen; picture-in-picture';
+      f.allowFullscreen = true;
+      f.title = enlace.getAttribute('data-titulo') || 'Vimeo';
+      marco.replaceChildren(f);
+      rotulo.textContent = enlace.getAttribute('data-titulo') || '';
+      modal.showModal();
+      document.body.style.overflow = 'hidden';
+    });
+
+    if (soporta) {
+      // Cerrar tocando fuera del vídeo. Esc ya lo resuelve el propio <dialog>.
+      modal.addEventListener('click', function (e) {
+        if (!e.target.closest('.vframe')) cerrar();
+      });
+      document.getElementById('vclose').addEventListener('click', cerrar);
+      modal.addEventListener('close', function () {
+        marco.replaceChildren();      // destruye el iframe: el vídeo deja de sonar
+        rotulo.textContent = '';
+        document.body.style.overflow = '';
+        if (origen) { origen.focus(); origen = null; }
+      });
+    }
+
+    var bloque = 0;
+    function medir() {
+      bloque = car.scrollWidth / 3;
+      if (bloque > 0 && car.scrollLeft < 1) car.scrollLeft = bloque;
+    }
+    // Las miniaturas son lazy: hay que remedir cuando el ancho real se asienta.
+    if (window.ResizeObserver) new ResizeObserver(medir).observe(car);
+    window.addEventListener('resize', medir);
+    medir();
+
+    var pendiente = false;
+    car.addEventListener('scroll', function () {
+      if (pendiente || !bloque) return;
+      pendiente = true;
+      requestAnimationFrame(function () {
+        pendiente = false;
+        if (car.scrollLeft < bloque * 0.5) car.scrollLeft += bloque;
+        else if (car.scrollLeft > bloque * 1.5) car.scrollLeft -= bloque;
+      });
+    }, { passive: true });
+
+    function paso() {
+      var t = car.querySelector('.vcard');
+      return t ? t.getBoundingClientRect().width + 24 : car.clientWidth * 0.8;
+    }
+    var prev = document.getElementById('vprev');
+    var next = document.getElementById('vnext');
+    if (prev) prev.addEventListener('click', function () { car.scrollBy({ left: -paso(), behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { car.scrollBy({ left: paso(), behavior: 'smooth' }); });
+  })();
+
+  // Português é sempre o idioma por omissão. Só o inglês escolhido à mão se recorda,
+  // e apenas para quem já carregou no botão EN — nunca por deteção do navegador.
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('cvemf-lang'); } catch (e) {}
+    if (saved === 'en') setLang('en');
+  })();
+</script>
+</body>
+</html>
