@@ -138,8 +138,13 @@
     transition:background .25s,color .25s}
   .ed-dl:hover,.ed-dl:focus-visible{background:#1c1d1f;color:#f2f1ef}
 
-  /* Morada de cada recinto na bilheteira. */
-  .venaddr{margin:8px 0 12px;font-weight:400;font-size:14px;line-height:1.55;color:#55575c}
+  /* Morada de cada recinto na bilheteira: abre o Google Maps. O alfinete é a única pista
+     visual de que se pode tocar — o texto mantém-se discreto, como antes. */
+  .venaddr{display:flex;gap:8px;align-items:flex-start;margin:8px 0 12px;font-weight:400;
+    font-size:14px;line-height:1.55;color:#55575c;text-decoration:none}
+  .venaddr svg{flex:none;margin-top:3px;color:#a4551a}
+  .venaddr:hover,.venaddr:focus-visible{color:#a4551a}
+  .venaddr:hover span{text-decoration:underline;text-underline-offset:2px}
 
   .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
     clip:rect(0 0 0 0);white-space:nowrap;border:0}
@@ -639,25 +644,37 @@
       <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
         <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Igreja de Santo António / Museu de Lagos</div>
         <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0 0">22 ago</div>
-        <div class="venaddr">Rua General Alberto da Silveira, 1<br>8600-594 Lagos, Portugal</div>
+        <a class="venaddr" href="https://www.google.com/maps/search/?api=1&amp;query=Igreja%20de%20Santo%20Ant%C3%B3nio%2C%20Rua%20General%20Alberto%20da%20Silveira%201%2C%208600-594%20Lagos%2C%20Portugal" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Rua General Alberto da Silveira, 1<br>8600-594 Lagos, Portugal</span>
+        </a>
         <a href="mailto:museu@cm-lagos.pt" style="font-weight:400; font-size:15px; overflow-wrap:anywhere">museu<wbr>@cm-lagos.pt</a>
       </div>
       <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
         <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Fortaleza de Sagres</div>
         <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0 0">23 ago</div>
-        <div class="venaddr">Rua da Fortaleza<br>8650-360 Sagres, Portugal</div>
+        <a class="venaddr" href="https://www.google.com/maps/search/?api=1&amp;query=Fortaleza%20de%20Sagres%2C%20Rua%20da%20Fortaleza%2C%208650-360%20Sagres%2C%20Portugal" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Rua da Fortaleza<br>8650-360 Sagres, Portugal</span>
+        </a>
         <a href="mailto:geral.fsagres@museusemonumentos.pt" style="font-weight:400; font-size:14px; overflow-wrap:anywhere">geral.fsagres<wbr>@museusemonumentos.pt</a>
       </div>
       <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
         <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Igreja da Misericórdia, Aljezur</div>
         <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0 0">28 ago</div>
-        <div class="venaddr">Rua S. João de Deus<br>8670-001 Aljezur, Portugal</div>
+        <a class="venaddr" href="https://www.google.com/maps/search/?api=1&amp;query=Igreja%20da%20Miseric%C3%B3rdia%20de%20Aljezur%2C%20Rua%20S.%20Jo%C3%A3o%20de%20Deus%2C%208670-001%20Aljezur%2C%20Portugal" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Rua S. João de Deus<br>8670-001 Aljezur, Portugal</span>
+        </a>
         <div style="font-weight:400; font-size:15px; line-height:1.55; color:#33353a"><span data-l="pt">Sem inscrição, mediante lotação dos espaços</span><span data-l="en">No registration required, subject to venue capacity</span></div>
       </div>
       <div style="background:#fff; border-top:2px solid #1c1d1f; padding:16px 24px 24px">
         <div style="font-family:'Saira Condensed',sans-serif; font-weight:700; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; line-height:1.3">Igreja (Matriz) de Nossa Senhora da Conceição, Vila do Bispo</div>
         <div style="font-weight:400; font-size:14px; color:#55575c; margin:8px 0 0">29 ago</div>
-        <div class="venaddr">Praça da República<br>Vila do Bispo, Portugal</div>
+        <a class="venaddr" href="https://www.google.com/maps/search/?api=1&amp;query=Igreja%20Matriz%20de%20Nossa%20Senhora%20da%20Concei%C3%A7%C3%A3o%2C%20Pra%C3%A7a%20da%20Rep%C3%BAblica%2C%20Vila%20do%20Bispo%2C%20Portugal" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Praça da República<br>Vila do Bispo, Portugal</span>
+        </a>
         <div style="font-weight:400; font-size:15px; line-height:1.55; color:#33353a"><span data-l="pt">Sem inscrição, mediante lotação dos espaços</span><span data-l="en">No registration required, subject to venue capacity</span></div>
       </div>
     </div>
