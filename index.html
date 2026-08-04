@@ -90,7 +90,10 @@
      Scroll horizontal nativo (dedo en móvil, flechas en escritorio). Las tarjetas son
      miniaturas: el reproductor de Vimeo se carga sólo al pulsar play. */
   .vcar{display:flex;align-items:flex-start;gap:24px;overflow-x:auto;overflow-y:hidden;
-    scroll-snap-type:x proximity;padding:40px clamp(24px,5vw,64px);
+    scroll-snap-type:x proximity;
+    /* Las tarjetas arrancan en el mismo borde izquierdo que los títulos del sitio: el gutter
+       normal en pantallas estrechas, y el borde de la retícula de 1280 px en las anchas. */
+    padding:40px max(clamp(24px,5vw,64px), calc((100% - 1280px) / 2 + clamp(24px,5vw,64px)));
     scrollbar-width:none;-ms-overflow-style:none;
     -webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
   .vcar::-webkit-scrollbar{display:none}
@@ -430,8 +433,19 @@
   </div>
 </section>
 
-<!-- ============ ARQUIVO EM VÍDEO ============ -->
-<section style="background:#1c1d1f; padding:24px 0">
+<!-- ============ VIDEOTECA ============ -->
+<!-- El título va FUERA de .vwrap a propósito: las flechas del carrusel se posicionan al 50%
+     de .vwrap, así que meterlo dentro las empujaría hacia abajo, fuera del centro de las
+     miniaturas. Colores tomados de las tarjetas, ya probados sobre este fondo oscuro. -->
+<section style="background:#1c1d1f; padding:56px 0 24px">
+  <div style="max-width:1280px; margin:0 auto; padding:0 clamp(24px,5vw,64px); box-sizing:border-box">
+    <h2 class="h2xc" style="margin:0 0 6px; font-size:clamp(28px,4.2vw,40px); color:#f2f1ef">
+      <span data-l="pt">Videoteca</span><span data-l="en">Video Archive</span>
+    </h2>
+    <div class="kicker" style="color:#a4551a">
+      <span data-l="pt">Edições 2021 · 2024 · 2025</span><span data-l="en">2021 · 2024 · 2025 editions</span>
+    </div>
+  </div>
   <div class="vwrap">
     <div class="vcar" id="vcar">
     <!-- VIDEOS:START -->
