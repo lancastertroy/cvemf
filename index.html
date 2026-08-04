@@ -818,6 +818,143 @@
 
 </div>
 
+<!-- Dados estruturados schema.org. Não transferem autoridade de SEO — servem para que o Google
+     perceba que isto é um festival com atos, datas e locais concretos, e o possa mostrar nos
+     seus resultados de eventos. Se o programa mudar, é preciso atualizar isto também. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Festival",
+      "@id": "https://lancastertroy.github.io/cvemf/#festival",
+      "name": "Costa Vicentina Early Music Fest '26",
+      "description": "4.ª edição do Costa Vicentina Early Music Fest — música antiga em Vila do Bispo, Sagres, Aljezur e Lagos. Entrada livre.",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-29",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://lancastertroy.github.io/cvemf/",
+      "image": "https://lancastertroy.github.io/cvemf/img/og-image.jpg",
+      "inLanguage": "pt-PT",
+      "isAccessibleForFree": true,
+      "location": { "@type": "Place", "name": "Costa Vicentina, Algarve",
+        "address": { "@type": "PostalAddress", "addressRegion": "Algarve", "addressCountry": "PT" } },
+      "organizer": { "@type": "Organization", "@id": "https://ocorvoearaposa.pt/#org",
+        "name": "O Corvo e a Raposa — Associação Cultural", "url": "https://ocorvoearaposa.pt",
+        "email": "ocorvoearaposacultural@gmail.com" }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Concerto Bolsa Artistas Emergentes Lagos 1460",
+      "startDate": "2026-08-22T19:00:00+01:00",
+      "superEvent": { "@id": "https://lancastertroy.github.io/cvemf/#festival" },
+      "organizer": { "@id": "https://ocorvoearaposa.pt/#org" },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://lancastertroy.github.io/cvemf/#programa",
+      "image": "https://lancastertroy.github.io/cvemf/img/og-image.jpg",
+      "isAccessibleForFree": true,
+      "location": { "@type": "Place", "name": "Igreja de Santo António / Museu de Lagos",
+        "address": { "@type": "PostalAddress", "streetAddress": "Rua General Alberto da Silveira, 1",
+          "postalCode": "8600-594", "addressLocality": "Lagos", "addressCountry": "PT" } },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock", "url": "https://lancastertroy.github.io/cvemf/" }
+    },
+    {
+      "@type": "Event",
+      "name": "Conversa \"Vozes na sombra: ecos da escravatura na música ibérica da era moderna\", com Hugo Sanches",
+      "startDate": "2026-08-23T15:00:00+01:00",
+      "superEvent": { "@id": "https://lancastertroy.github.io/cvemf/#festival" },
+      "organizer": { "@id": "https://ocorvoearaposa.pt/#org" },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://lancastertroy.github.io/cvemf/#programa",
+      "image": "https://lancastertroy.github.io/cvemf/img/og-image.jpg",
+      "isAccessibleForFree": true,
+      "performer": { "@type": "Person", "name": "Hugo Sanches" },
+      "location": { "@type": "Place", "name": "Fortaleza de Sagres",
+        "address": { "@type": "PostalAddress", "streetAddress": "Rua da Fortaleza",
+          "postalCode": "8650-360", "addressLocality": "Sagres", "addressCountry": "PT" } },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock", "url": "https://lancastertroy.github.io/cvemf/" }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "O Bando de Surunyo — \"O Cancioneiro Ibérico: Entre Celebração e Memória\"",
+      "startDate": "2026-08-23T16:00:00+01:00",
+      "superEvent": { "@id": "https://lancastertroy.github.io/cvemf/#festival" },
+      "organizer": { "@id": "https://ocorvoearaposa.pt/#org" },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://lancastertroy.github.io/cvemf/#programa",
+      "image": "https://lancastertroy.github.io/cvemf/img/og-image.jpg",
+      "isAccessibleForFree": true,
+      "performer": { "@type": "MusicGroup", "name": "O Bando de Surunyo" },
+      "location": { "@type": "Place", "name": "Fortaleza de Sagres",
+        "address": { "@type": "PostalAddress", "streetAddress": "Rua da Fortaleza",
+          "postalCode": "8650-360", "addressLocality": "Sagres", "addressCountry": "PT" } },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock", "url": "https://lancastertroy.github.io/cvemf/" }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Na Rota do Peregrino — \"Rotas de peregrinação: uma viagem a Roma, Montserrat e Compostela\"",
+      "startDate": "2026-08-28T21:00:00+01:00",
+      "superEvent": { "@id": "https://lancastertroy.github.io/cvemf/#festival" },
+      "organizer": { "@id": "https://ocorvoearaposa.pt/#org" },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://lancastertroy.github.io/cvemf/#programa",
+      "image": "https://lancastertroy.github.io/cvemf/img/og-image.jpg",
+      "isAccessibleForFree": true,
+      "performer": { "@type": "MusicGroup", "name": "Na Rota do Peregrino" },
+      "location": { "@type": "Place", "name": "Igreja da Misericórdia de Aljezur",
+        "address": { "@type": "PostalAddress", "streetAddress": "Rua S. João de Deus",
+          "postalCode": "8670-001", "addressLocality": "Aljezur", "addressCountry": "PT" } },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock", "url": "https://lancastertroy.github.io/cvemf/" }
+    },
+    {
+      "@type": "Event",
+      "name": "Oficina de Voz \"Cantigas de Santa Maria de Afonso X\", com Joana Godinho",
+      "startDate": "2026-08-29T11:00:00+01:00",
+      "superEvent": { "@id": "https://lancastertroy.github.io/cvemf/#festival" },
+      "organizer": { "@id": "https://ocorvoearaposa.pt/#org" },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://lancastertroy.github.io/cvemf/#programa",
+      "image": "https://lancastertroy.github.io/cvemf/img/og-image.jpg",
+      "isAccessibleForFree": true,
+      "performer": { "@type": "Person", "name": "Joana Godinho" },
+      "location": { "@type": "Place", "name": "Igreja (Matriz) de Nossa Senhora da Conceição, Vila do Bispo",
+        "address": { "@type": "PostalAddress", "streetAddress": "Praça da República",
+          "addressLocality": "Vila do Bispo", "addressCountry": "PT" } },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock", "url": "https://lancastertroy.github.io/cvemf/" }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Concerto de Encerramento — Na Rota do Peregrino",
+      "startDate": "2026-08-29T18:00:00+01:00",
+      "superEvent": { "@id": "https://lancastertroy.github.io/cvemf/#festival" },
+      "organizer": { "@id": "https://ocorvoearaposa.pt/#org" },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://lancastertroy.github.io/cvemf/#programa",
+      "image": "https://lancastertroy.github.io/cvemf/img/og-image.jpg",
+      "isAccessibleForFree": true,
+      "performer": { "@type": "MusicGroup", "name": "Na Rota do Peregrino" },
+      "location": { "@type": "Place", "name": "Igreja (Matriz) de Nossa Senhora da Conceição, Vila do Bispo",
+        "address": { "@type": "PostalAddress", "streetAddress": "Praça da República",
+          "addressLocality": "Vila do Bispo", "addressCountry": "PT" } },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock", "url": "https://lancastertroy.github.io/cvemf/" }
+    }
+  ]
+}
+</script>
+
 <script>
   function setLang(l) {
     document.documentElement.dataset.lang = l;
