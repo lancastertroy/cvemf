@@ -56,6 +56,8 @@
   .flink:hover{color:#e88b3d}
   .soc{color:#e8e8e6;text-decoration:none;display:inline-flex}
   .soc:hover{color:#e88b3d}
+  .soc svg{width:26px;height:26px;display:block}
+  .socwrap{display:flex;gap:24px;margin-top:16px}
 
   .grain{position:absolute;inset:0;pointer-events:none;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
@@ -1251,13 +1253,15 @@
   <div style="max-width:1280px; margin:0 auto; padding:0 clamp(24px,5vw,64px); box-sizing:border-box">
    <div style="max-width:1040px">
 
-    <div style="display:flex; flex-wrap:wrap; gap:16px 24px; align-items:center">
-      <div style="font-family:'Saira Extra Condensed',sans-serif; font-weight:700; letter-spacing:0.02em; font-size:22px; text-transform:uppercase; line-height:1.15">O Corvo e a Raposa <span style="font-weight:500; color:rgba(255,255,255,0.72)">— Associação Cultural</span></div>
-      <div style="display:flex; flex-wrap:wrap; gap:8px 24px; font-size:15px">
-        <a class="flink" href="mailto:ocorvoearaposacultural@gmail.com" style="overflow-wrap:anywhere">ocorvoearaposacultural<wbr>@gmail.com</a>
-        <a class="flink" href="https://ocorvoearaposa.pt" target="_blank" rel="noopener">ocorvoearaposa.pt</a>
+    <div style="display:flex; flex-wrap:wrap; gap:16px 24px; align-items:flex-start; justify-content:space-between">
+      <div>
+        <div style="font-family:'Saira Extra Condensed',sans-serif; font-weight:700; letter-spacing:0.02em; font-size:22px; text-transform:uppercase; line-height:1.15">O Corvo e a Raposa <span style="font-weight:500; color:rgba(255,255,255,0.72)">— Associação Cultural</span></div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px 24px; font-size:15px; margin-top:20px">
+          <a class="flink" href="mailto:ocorvoearaposacultural@gmail.com" style="overflow-wrap:anywhere">ocorvoearaposacultural<wbr>@gmail.com</a>
+          <a class="flink" href="https://ocorvoearaposa.pt" target="_blank" rel="noopener">ocorvoearaposa.pt</a>
+        </div>
       </div>
-      <div style="display:flex; gap:16px; margin-left:auto">
+      <div class="socwrap">
         <a class="soc" href="https://vimeo.com/ocorvoearaposa" target="_blank" rel="noopener" aria-label="Vimeo: ocorvoearaposa" title="Vimeo: ocorvoearaposa">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.4 7.4c-.1 2.2-1.6 5.3-4.6 9.1-3.1 4-5.7 6-7.8 6-1.3 0-2.4-1.2-3.3-3.6l-1.8-6.6c-.7-2.4-1.4-3.6-2.2-3.6-.2 0-.8.4-1.8 1.1L-.2 8.4c1.1-1 2.3-2 3.4-3 1.5-1.3 2.7-2 3.4-2.1 1.8-.2 2.9 1.1 3.3 3.7.5 2.9.8 4.7 1 5.4.5 2.4 1.1 3.6 1.8 3.6.5 0 1.3-.8 2.3-2.5 1-1.6 1.6-2.9 1.7-3.7.2-1.4-.4-2.1-1.7-2.1-.6 0-1.2.1-1.9.4 1.3-4 3.6-6 7-5.8 2.5.1 3.7 1.7 3.5 5.1z"/></svg>
         </a>
@@ -1273,7 +1277,17 @@
       </div>
     </div>
 
-    <!-- Cierre: solo el domínio. Créditos y apoios vivem na Ficha Artística, não se repetem aqui. -->
+    <!-- Logos dos parceiros: mesma lista da Ficha Artística, aqui em imagem. -->
+    <div style="margin-top:32px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.18)">
+      <img src="img/logos-parceiros-480.webp"
+           srcset="img/logos-parceiros-480.webp 480w, img/logos-parceiros-720.webp 720w, img/logos-parceiros-960.webp 960w"
+           sizes="(min-width:640px) 420px, 60vw"
+           width="480" height="911" loading="lazy" decoding="async"
+           style="display:block; width:min(420px,60vw); height:auto"
+           alt="Promotor: O Corvo e a Raposa. Parceria estratégica: Município de Vila do Bispo, Museu de Vila do Bispo. Parceiros: República Portuguesa, Museus e Monumentos de Portugal, Promontório de Sagres, Aljezur, Câmara Municipal de Lagos, Museu de Lagos. Apoio: CCDR Algarve, Diocese do Algarve, Paróquias de Vila do Bispo, Fundação GDA. Parceiro media: Antena 2">
+    </div>
+
+    <!-- Cierre: solo el domínio. -->
     <div style="margin-top:32px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.18); font-family:'Saira Condensed',sans-serif; font-weight:600; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,0.65); line-height:1.55">costavicentinaemf.pt</div>
    </div>
   </div>
